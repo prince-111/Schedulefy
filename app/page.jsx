@@ -1,10 +1,9 @@
-import React from "react";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import Image from "next/image";
+import Link from "next/link";
 import { ArrowRight, Calendar, Clock, LinkIcon } from "lucide-react";
 import TestimonialsCarousel from "@/components/testimonials";
-import Link from "next/link";
 
 const features = [
   {
@@ -40,7 +39,7 @@ const howItWorks = [
   },
 ];
 
-const Home = () => {
+export default function Home() {
   return (
     <main className="container mx-auto px-4 py-16">
       {/* Hero Section */}
@@ -140,6 +139,4 @@ const Home = () => {
       </div>
     </main>
   );
-};
-
-export default Home;
+}
